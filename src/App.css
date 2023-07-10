@@ -4,6 +4,11 @@
   text-align: center;
 }
 
+.home{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,16 +39,68 @@
 }
 
 .btn{
-  background-color: lightsalmon;
+  background-color: #EF5354;
   cursor: pointer;
-  width: 100px;
+  width: 25vw;
   height: 45px;
   border-radius: 10px;
+  font-size: 20px;
 
 }
 
 .box{
-  width: 250px;
+  width: 25vw;
   height: 40px;
   border-radius: 10px;
+}
+
+.image{
+  height: 100vh;
+}
+
+.containtBox{
+  width: 30vw;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon{
+  height: 120px;
+}
+
+@media only screen and (max-width: 600px){
+  .home{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+
+  .containtBox{
+    width: 100vw;
+  }
+  .image{
+    height: 300px;
+    width: 100vw;
+  }
+  .icon{
+    padding-top: 30px;
+    height: 100px;
+  }
+  .box{
+    width: 50vw;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .btn{
+    background-color: #EF5354;
+    cursor: pointer;
+    width: 50vw;
+    height: 45px;
+    border-radius: 10px;
+  
+  }
 }

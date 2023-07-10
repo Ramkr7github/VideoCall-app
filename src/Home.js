@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './App.css';
+import VCimage from "./image/VCimage.jpg"
+import icon from "./image/icon.png"
 import { useNavigate } from 'react-router-dom';
 
 function Home() {
@@ -15,11 +17,22 @@ function Home() {
   return (
    
     
-    <div className='App'>
-        
-            
+    <div className='home'>
+        <div className='containtBox'>
+          
+        <img className="icon" src={icon} alt="icon"/>
+
+          <h1> Join Video Call</h1> 
         <input className="box" type='text' placeholder='Enter RoomID' value={roomID} onChange={(e)=>{ setRoomID(e.target.value)}}></input>
         <button className='btn' onClick={handleJoin}>Join</button>
+        </div>
+        <div className='imageBox'>
+         
+        <img className="image" src={VCimage} alt="image"/>
+
+        </div>
+            
+        
     </div>
     
   )
