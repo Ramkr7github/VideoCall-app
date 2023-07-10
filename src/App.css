@@ -79,10 +79,15 @@
   }
 
   .containtBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 100vw;
+    height: 350px;
+    padding-bottom: 25px;
   }
   .hero{
-    height: 400px;
+    height: 350px;
     width: 100vw;
   }
   .icon{
@@ -93,6 +98,7 @@
     width: 50vw;
     height: 40px;
     border-radius: 10px;
+    
   }
 
   .btn{
@@ -101,6 +107,8 @@
     width: 50vw;
     height: 45px;
     border-radius: 10px;
+
+    
   
   }
 }
