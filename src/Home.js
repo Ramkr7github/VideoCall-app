@@ -28,7 +28,7 @@ function Home() {
         </div>
         <div className='imageBox'>
          
-        <img className="image" src={VCimage} alt="image"/>
+        <img className="hero" src={VCimage} alt="hero"/>
 
         </div>
             

@@ -54,7 +54,7 @@
   border-radius: 10px;
 }
 
-.image{
+.hero{
   height: 100vh;
 }
 
@@ -81,7 +81,7 @@
   .containtBox{
     width: 100vw;
   }
-  .image{
+  .hero{
     height: 300px;
     width: 100vw;
   }
